@@ -21,6 +21,17 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/lightbox.css">
     
+
+    <style>
+    
+
+.meeting-item .thumb {
+    height: 400px; /* Set a fixed height for the thumbnail section */
+    overflow: hidden; /* Hide overflow content */
+}
+
+
+    </style>
 <!--
 
 TemplateMo 569 Edu Meeting
@@ -93,67 +104,7 @@ https://templatemo.com/tm-569-edu-meeting
   </section>
   <!-- ***** Main Banner Area End ***** -->
 
-  <section class="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="owl-service-item owl-carousel">
-          
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/Crime.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Crime</h4>
-                <!-- <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p> -->
-              </div>
-            </div>
-            
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/Romance.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Romance</h4>
-                <!-- <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p> -->
-              </div>
-            </div>
-            
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/Fantasy.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Fantasy</h4>
-                <!-- <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p> -->
-              </div>
-            </div>
-            
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/Adventure.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Adventure</h4>
-                <!-- <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p> -->
-              </div>
-            </div>
-            
-            <div class="item">
-              <div class="icon">
-                <img src="assets/images/Mystery.png" alt="">
-              </div>
-              <div class="down-content">
-                <h4>Mystery</h4>
-                <!-- <p>Suspendisse tempor mauris a sem elementum bibendum. Praesent facilisis massa non vestibulum.</p> -->
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  
 
   <section class="upcoming-meetings" id="meetings">
     <div class="container">
@@ -178,9 +129,9 @@ https://templatemo.com/tm-569-edu-meeting
               <li><a href="#">Crime</a></li>
               <li><a href="#">Drama</a></li>
             </ul>
-            <div class="main-button-red">
+            <!-- <div class="main-button-red">
               <a href="meetings.html">Show more</a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="col-lg-8">
@@ -226,23 +177,19 @@ https://templatemo.com/tm-569-edu-meeting
                     catalogueDiv.innerHTML += '<div class="row">';
                 }
                 const meetingItem = `
-                    <div class="col-lg-6">
-                        <div class="meeting-item">
-                            <div class="thumb">
-                                <div class="price">
-                                    <span>${item.creator}</span>
-                                </div>
-                                <a href="meeting-details.html"><img src="${item.image}" alt="${item.name}"></a>
-                            </div>
-                            <div class="down-content">
-                                <div class="date">
-                                    <h6>RAT <span>${item.rate}</span></h6>
-                                </div>
-                                <a href="meeting-details.html"><h4>${item.name}</h4></a>
-                                <p>${item.desc}</p>
-                            </div>
+                <div class="col-lg-6">
+                    <div class="meeting-item">
+                        <div class="thumb">
+                            
+                            <a href="meeting-details.html"><img src="${item.image}" alt="${item.name}"></a>
+                        </div>
+                        <div class="down-content">
+                            
+                            <a href="meeting-details.html"><h4>${item.name}</h4></a>
+                            <p>${item.desc}</p>
                         </div>
                     </div>
+                </div>
                 `;
                 catalogueDiv.innerHTML += meetingItem;
                 if (index % 2 !== 0 || index === data.catalogue.length - 1) { // Check if the index is odd or it's the last item
