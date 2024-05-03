@@ -1,0 +1,8 @@
+{
+  "catalogue":[
+    {"name":"yourLie","image":"https://wp.youtube-anime.com/aln.youtube-anime.com/images137/howMfEQ4vvXfLWYfY/1/sub/1.css?w=800","desc":"Amazing book, mucho sad, highly recomended", "creator":"resham", "rate": "4.0", "category": ["Romance", "Musical"]},
+    {"name":"madeinabyss","image":"https://wp.youtube-anime.com/aln.youtube-anime.com/images6/fnuuMMSLBJaX2wvn3/1/sub_1.css?w=800","desc":"Amazing book, mucho sad, highly not recomended", "creator":"savit", "rate": "5.0", "category": ["Fantasy", "Mystery", "Adventure"]},
+    {"name":"Ninja Kamui","image":"https://upload.wikimedia.org/wikipedia/en/b/b2/Ninja_Kamui.png","desc":"Amazing book, mucho sad, highly not recomended", "creator":"savit", "rate": "4.9"},
+    {"name":"madeinabyss","image":"https://upload.wikimedia.org/wikipedia/en/c/cf/Undead_Unluck%2C_volume_1_cover.jpg","desc":"Amazing book, mucho sad, highly not recomended", "creator":"savit", "rate": "3.8"}
+    ]
+}
